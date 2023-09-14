@@ -17,10 +17,11 @@
             <h2> Postagem efetuada com Sucesso!</h2>
 
             <?php
-                $usuario = "Gael";
+                //$usuario = "Gael";
                 //criação de cookie
                 //nome do cookie + valor + dataExpiração + onde pode acessar("/"Qualquer lugar)
-                setcookie("nome", $usuario, time() + 86400 * 30, "/");
+                //setcookie("nome", $usuario, time() + 86400 * 30, "/");
+                $usuario = $_COOKIE["nome"];
                 
                 //verifica se a requisição foi feita usando POST
                 if($_SERVER["REQUEST_METHOD"] == "POST"){
@@ -51,8 +52,8 @@
         
         <div class="rodape"> 
             <a href="index.html" class="botao"> Fazer Nova Postagem </a>
-            <a href="usuario.html" class="botao"> Cadastrar Usuario </a>
-            <a href="busca.html" class="botao"  >   Buscar          </a>
+            <a href="cookie.html" class="botao"> Cadastrar Usuario </a>
+            <a href="busca.html" class="botao"  >   Buscar        </a>
             <a href="lista.php" class="botao"> Lista de Posts  </a>
         </div>
 

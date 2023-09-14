@@ -22,14 +22,19 @@
                 echo "Bem-Vindo $usuario!";
 
                 session_start();
+                if(isset($_SESSION["postagens"])){ //se existir uma lista de postagens
+                   
+                    foreach ($_SESSION["postagens"] as $postagem){
+                        echo '<div class="card">';
+                        echo "<strong> $usuario: </strong>";
+                        echo "$postagem";
+                        echo '</div>';
+                    }
 
-                foreach ($_SESSION["postagens"] as $postagem){
-                    echo '<div class="card">';
-                    echo "<strong> $usuario: </strong>";
-                    echo "$postagem";
-                    echo '</div>';
+                }else{
+                    //para o caso de não existir nenhuma postagem
+                    echo "<p> Nenhuma postagem encontrada! </p> ";
                 }
-
             ?>
 
         </div>
