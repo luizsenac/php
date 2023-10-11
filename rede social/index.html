@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rede Social</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="painel">
+
+        <div class="cabecalho"> 
+            <img width="200px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Senac_logo.svg/2560px-Senac_logo.svg.png">
+            <h1> Connect </h1>
+           
+        </div>
+
+        <div class="conteudo">  
+            <h3> Fazer Postagem </h3>
+            <form action="salvar.php" method="POST">
+                
+                <textarea name="postagem" id="postagem" cols="25" rows="7" placeholder="O que está pensando agora?"></textarea>
+                <br>
+                <br>
+                <input type="submit" value="Postar" class="enviar">
+
+            </form>
+        </div>
+
+        <div class="rodape">
+            <a href="cookie.html" class="botao"> Cadastrar Usuario </a>
+            <a href="busca.html" class="botao"  >   Buscar            </a>
+            <a href="lista.php" class="botao"> Lista de Posts  </a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

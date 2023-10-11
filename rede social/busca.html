@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Postagens </title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        function buscar(){
+            //pegar valor do campo input do html e armazenar em uma variável
+            var valor = $("#valor").val();
+         
+            $.ajax({
+                url: "fazerbusca.php",            //arquivo php, backend
+                method: "GET",                    //tipo de requisição "GET"
+                data: { busca: valor },            //atributo busca vai guardar o valor
+                success: function(data){           //em caso de sucesso
+                    $("#resultado").html(data);   //escreve os dados na div resultado
+                }
+            });
+        }
+
+        //chama função buscar quando carrega a pagina
+        $(document).ready(function(){
+            buscar();
+        });
+    </script>
+
+</head>
+<body>
+    <div class="painel">
+        <div class="cabecalho">
+            
+            <h1> Página de Busca </h1>   
+            <a href="index.html" class="botao"> Fazer Nova Postagem </a>
+
+        </div>
+
+        <div class="conteudo"> 
+            
+            <input type="text" id="valor" placeholder=" Digite a busca">
+            <button onclick="buscar()" class="enviar"> Buscar </button>
+
+            <div id="resultado">
+                
+            </div>
+
+
+        </div>
+
+        <div class="rodape">   </div>
+    </div>    
+</body>
+</html>

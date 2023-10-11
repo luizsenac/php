@@ -1,0 +1,64 @@
+.painel{
+    box-shadow: 2px 2px 10px black; /*sombra*/
+    min-height: 600px;                /*altura mínima*/
+    max-width: 800px;                 /*largura máxima*/
+    margin: 20px auto;                /*centralizar*/
+    border-radius: 10px;              /*arredondar bordas*/
+    text-align:center;                /*centralizar texto*/
+    padding: 10px;
+    background-color: white;
+}
+.chat{
+    border: 1px solid gray;        /*borda*/
+    height: 400px;                   /*altura*/
+    border-radius: 10px;             /*arredondar borda*/
+    overflow-y: scroll;              /*adicionar barra de rolagem*/
+}
+
+input{
+    height: 30px;               /*altura*/
+    width: 250px;               /*largura*/
+    border-radius: 10px;        /*borda arredonda*/
+    margin: 5px;                /*margem*/
+}
+
+button{
+    height: 30px;               /*altura*/
+    width: 150px;               /*largura*/
+    background-color: green;  /*cor de fundo*/
+    color: white;             /*cor da letra*/
+    border: none;               /*sem borda*/
+    border-radius: 10px;        /*arredondar borda*/
+}
+
+body{
+    background-image: linear-gradient(to left, rgb(5, 109, 5), green);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button:hover{
+    background-color: darkseagreen;
+    font-size: 18px;
+    transition: 1s;
+    box-shadow: 1px 1px 10px black;
+}
+
+.mensagens{
+    text-align: left;                   /* alinhar a esquerda */
+    padding: 2px;                       /* margem interna */
+    padding-left: 20px;            /* margem interna da esquerda */
+    box-shadow: 2px 2px 5px gray;   /*sombra*/
+    margin: 14px;                     /*margem externa */
+    border-radius: 10px;              /*arrendondar bordas */
+}
+
+b{                             /*tag de negrito*/
+    font-size: 20px;           /*tamanho da fonte*/
+    color: green;            /*cor da letra*/
+}
+.mensagens:hover{               /*quando passar o mouse*/
+    background-color: honeydew;   /*muda a cor*/
+    transition: 1s;                 /*tempo de animação*/
+}
+
+
