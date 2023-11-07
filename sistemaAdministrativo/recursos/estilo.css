@@ -1,0 +1,75 @@
+.painel{
+    min-width: 350px;            /*largura*/
+    margin:  20px auto;          /*centralizar*/
+    box-shadow: 2px 2px 10px;    /*sombreado*/
+    border-radius: 10px;         /*arredondar bordas*/
+    padding: 20px;               /*espaçamento interno*/
+
+    background-color: rgba(255, 255, 255, 0.808);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    z-index: 5;
+}
+.login{
+    text-align: center;
+    color: dodgerblue;
+}
+.usuario{
+    font-size: 100px;
+    padding-left: 102px;
+    color: dodgerblue;
+}
+
+/* personalização do menu lateral */
+.menu{
+    background-color: #034079;      /* cor de fundo */
+    min-width: 250px;                 /* largura minima */
+    color: white;                   /* cor da letra */
+    height: 100vh;                    /* altura é a altura do navegador */
+    list-style: none;                 /* estilo de lista nenhum */
+
+}
+
+/* faça o menu desaperecer no celular */
+@media (max-width: 999px){                      /*largura maxima de 768px */
+    .menu{
+        display: none;         /*se a tela for abaixo de 768px, desaparece o menu, com display none*/
+    }
+}
+
+.item{
+    display: block;               /*itens comportam-se como blocos*/
+    padding: 10px 20px;           /*espaçamento interno lateral(10px) e acima (20px)*/
+    text-decoration: none;        /*tirar decoração*/
+    font-style: none;             /*tirar decoração*/
+    color: white;               /*cor da letra*/
+    border: 1px solid white;    /*borda branca*/    
+    border-radius: 10px;          /*arredondar borda*/
+    margin-left: -50px;           /*espaçamento externo esquerdo*/
+    margin-top: 10px;             /*espaçamento externo acima */
+}
+.item:hover{
+    background-color: white;        /*cor de fundo do item*/
+    transition: 1s;                   /*tempo de animação*/
+    text-decoration: none;            /*tira a decoração das letras*/
+    box-shadow: 1px 1px 10px black; /* sombra */
+}
+
+ul{
+    list-style: none;
+}
+
+.cartao{
+    box-shadow: 2px 2px 10px gray;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.cartao:hover{
+    background-color: aliceblue;
+    transition: 1s;
+}
