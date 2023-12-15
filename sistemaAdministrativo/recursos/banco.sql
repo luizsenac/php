@@ -67,5 +67,17 @@ END;
 // DELIMITER ;
 
 
+/* CRIANDO UM TRIGGER*/
+DELIMITER //
+CREATE TRIGGER calcular_horas_atualizar
+BEFORE UPDATE ON agenda
+FOR EACH ROW
+BEGIN 
+    SET new.horas = TIMEDIFF(NEW.hora_fim, NEW.hora_inicio);
+END;
+// DELIMITER ;
+
+
+
 
 

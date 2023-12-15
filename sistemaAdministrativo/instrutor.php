@@ -26,7 +26,7 @@
         <i class="fa-solid fa-user usuario  animate__animated animate__flipInX"></i>
         <h1 class="login animate__animated animate__flipInX"> Login: </h1>
 
-        <form action="acesso.php" method="POST">
+        <form action="acessoInstrutor.php" method="POST">
             <div class="form-group">
                 <label> CPF </label>
                 <input name="cpf" id="cpf" type="text" class="form-control"  placeholder="Seu CPF" required> 
@@ -38,16 +38,13 @@
             </div>
 
             <button type="submit" class="btn btn-primary">Enviar</button>
-
-            <a class="btn btn-primary" href="instrutor.php"> Instrutores </a>
-            
             <button type="reset" class="btn btn-primary">Limpar</button>
         </form>
 
 
     </div>
     
-    <div id="particles-js"></div> <!-- stats - count particles --> 
+    <div id="particles-js" style="background-color:gray" ></div> <!-- stats - count particles --> 
 
     <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> 
