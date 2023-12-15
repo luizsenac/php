@@ -1,0 +1,29 @@
+.painel{
+    max-width: 500px; /* largura */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 10px black;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+    z-index: +1;
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: lavender !important;
+}
+
+.logo{
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
